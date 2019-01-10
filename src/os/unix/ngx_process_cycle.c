@@ -71,7 +71,7 @@ static ngx_open_file_t  ngx_exit_log_file;
 
 void
 ngx_master_process_cycle(ngx_cycle_t *cycle)
-{//lux ngxin master process
+{//lux nginx master process
     char              *title;
     u_char            *p;
     size_t             size;
@@ -725,7 +725,7 @@ ngx_master_process_exit(ngx_cycle_t *cycle)
 
 static void
 ngx_worker_process_cycle(ngx_cycle_t *cycle, void *data)
-{
+{//lux nginx worker process
     ngx_int_t worker = (intptr_t) data;
 
     ngx_process = NGX_PROCESS_WORKER;
