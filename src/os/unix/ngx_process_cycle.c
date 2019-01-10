@@ -71,7 +71,7 @@ static ngx_open_file_t  ngx_exit_log_file;
 
 void
 ngx_master_process_cycle(ngx_cycle_t *cycle)
-{
+{//lux ngxin master process
     char              *title;
     u_char            *p;
     size_t             size;
